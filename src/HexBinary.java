@@ -1,11 +1,9 @@
-public class FromHexToBinaryAndViceVersa {
-    public static void main(String[] args) {
-        String binaryNumber = "100111010000";
-        System.out.println("Binary number" + binaryNumber + "equals to hexadecimal representation " + toHex(binaryNumber));
-        String hexNumber = "9d0";
-        System.out.println("Hexadecimal number " + hexNumber + "equals to binary representation " + toBinary(hexNumber));
+public class HexBinary {
+    
+    public HexBinary() {
     }
-    public static String toHex(String binaryNumber) {
+    
+    public String toHex(String binaryNumber) {
 
         String hexNumber = "";
         if(binaryNumber == null){
@@ -42,7 +40,7 @@ public class FromHexToBinaryAndViceVersa {
         return hexNumber;
     }
 
-    public static String toBinary(String hexNumber) {
+    public String toBinary(String hexNumber) {
         //напишите тут ваш код
         String binaryNumber = "";
         if(hexNumber == null){
