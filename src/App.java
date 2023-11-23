@@ -8,17 +8,11 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("== Convertor ==");
-        System.out.println();
-
         Scanner reader = new Scanner(System.in);
+        UserInterface ui = new UserInterface(reader);
 
+        ui.start();
 
-        System.out.print("Enter decimal number: ");
-        int decimal = Integer.valueOf(reader.nextLine());
-
-        Convertor convertor = new Convertor(decimal);
-        convertor.toBinary();
 
 
 
