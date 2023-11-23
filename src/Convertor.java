@@ -1,7 +1,7 @@
 
 /**
  * Sep 26, 2023
- * @developed by Tangirov Akbar
+ * @developed by Akbar and Davron
  * @version 1.0
  */
 
@@ -22,7 +22,7 @@ public class Convertor {
         return this.binaryDecimal.decimalToBinary(decimal);
     }
 
-    
+
     // HexBinary
     public String toHex(String binaryNumber) {
         return this.hexBinary.toHex(binaryNumber);
