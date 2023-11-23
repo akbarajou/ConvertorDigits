@@ -2,9 +2,9 @@ public class ToOctalAndViceVersa {
 
     public static void main(String[] args) {
         int decimalNumber = 21;
-        System.out.println("Десятичное число " + decimalNumber + " равно восьмеричному числу " + toOctal(decimalNumber));
+        System.out.println("Decimal number " + decimalNumber + " equals to octal representation " + toOctal(decimalNumber));
         int octalNumber = 25;
-        System.out.println("Восьмеричное число " + octalNumber + " равно десятичному числу " + toDecimal(octalNumber));
+        System.out.println("Octal number " + octalNumber + " equals to decimal representation " + toDecimal(octalNumber));
     }
 
     public static int toOctal(int decimalNumber) {
