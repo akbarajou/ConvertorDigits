@@ -1,15 +1,12 @@
 public class FromHexToBinaryAndViceVersa {
     public static void main(String[] args) {
         String binaryNumber = "100111010000";
-        System.out.println("Binary number" + binaryNumber + "equals to hexadecimal representation" + toHex(binaryNumber));
+        System.out.println("Binary number" + binaryNumber + "equals to hexadecimal representation " + toHex(binaryNumber));
         String hexNumber = "9d0";
-        System.out.println("Hexadecimal number " + hexNumber + "equals to binary representation" + toBinary(hexNumber));
+        System.out.println("Hexadecimal number " + hexNumber + "equals to binary representation " + toBinary(hexNumber));
     }
-
     public static String toHex(String binaryNumber) {
-//        Проверяем длину строки, полученной входящим параметром. Она должна быть кратна 4.
-//        Если это не так, то добавляем нужное количество 0 в начало строки.
-//                 Берем каждые четыре символа (бита) и проверяем, какому символу шестнадцатеричной кодировки он соответствует.
+
         String hexNumber = "";
         if(binaryNumber == null){
             return hexNumber;
@@ -43,7 +40,6 @@ public class FromHexToBinaryAndViceVersa {
             }
         }
         return hexNumber;
-
     }
 
     public static String toBinary(String hexNumber) {
@@ -54,7 +50,7 @@ public class FromHexToBinaryAndViceVersa {
         }
         for(int i = 0;i<hexNumber.length();i++){
             switch(String.valueOf(hexNumber.charAt(i))){
-                case "0": binaryNumber +="0000";continue;
+                case "0": binaryNumber += "0000";continue;
                 case "1": binaryNumber += "0001";continue;
                 case "2": binaryNumber += "0010";continue;
                 case "3": binaryNumber += "0011";continue;
