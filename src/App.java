@@ -1,19 +1,18 @@
 import java.util.Scanner;
 
+
 /**
- * Sep 26, 2023
- * @developed by Tangirov Akbar
- * @version 1.0
+ * The main class of the application.
+ * @author Akbar and Davron
  */
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         UserInterface ui = new UserInterface(reader);
 
         ui.start();
-
-
+        
 
 
 

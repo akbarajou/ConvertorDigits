@@ -6,24 +6,28 @@ public class BinaryDecimal {
 
     public int binaryToDecimal(int binary) {
         int decimal = 0;
-        int power = 0;
-        while (binary != 0) {
-            int lastDigit = binary % 10;
-            decimal += lastDigit * Math.pow(2, power);
-            power++;
-            binary /= 10;
+        int n = 0;
+        while (true) {
+            if (binary == 0) {
+                break;
+            } else {
+                int temp = binary % 10;
+                decimal += temp * Math.pow(2, n);
+                binary = binary / 10;
+                n++;
+            }
         }
         return decimal;
     }
 
     public int decimalToBinary(int decimal) {
         int binary = 0;
-        int power = 1;
+        int n = 1;
         while (decimal != 0) {
-            int lastDigit = decimal % 2;
-            binary += lastDigit * power;
-            power *= 10;
-            decimal /= 2;
+            int temp = decimal % 2;
+            decimal = decimal / 2;
+            binary += temp * n;
+            n = n * 10;
         }
         return binary;
     }

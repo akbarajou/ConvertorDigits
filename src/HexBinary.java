@@ -1,3 +1,12 @@
+
+/**
+ * The class HexBinary contains methods for 
+ * converting hexadecimal numbers to binary and vice versa.
+ * 
+ * @developed by Akbar and Davron
+ * @auther of this source code is Davron
+ */
+
 public class HexBinary {
     
     public HexBinary() {

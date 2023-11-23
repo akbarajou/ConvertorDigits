@@ -1,14 +1,21 @@
-public class ToHexAndViceVersa {
-    private static final String HEX = "0123456789abcdef";
 
-    public static void main(String[] args) {
-        int decimalNumber = 1256;
-        System.out.println("Decimal number " + decimalNumber + " equals hexadecimal representation " + toHex(decimalNumber));
-        String hexNumber = "4e8";
-        System.out.println("Hexadecimal number " + hexNumber + " equals decimal representation " + toDecimal(hexNumber));
+/**
+ * The HexDecimal class provides methods for converting decimal numbers to hexadecimal and vice versa.
+ * It contains a constant string HEX representing the hexadecimal digits.
+ * 
+ * @developed by Akbar and Davron
+ * @@auther of this source code is Davron
+ */
+
+
+public class HexDecimal {
+    private static final String HEX = "0123456789abcdef";
+    
+    public HexDecimal() {
+
     }
 
-    public static String toHex(int decimalNumber) {
+    public String decimalToHex(int decimalNumber) {
 
         String hexadecimal = "";
         if(decimalNumber <= 0){
@@ -21,7 +28,7 @@ public class ToHexAndViceVersa {
         return hexadecimal;
     }
 
-    public static int toDecimal(String hexNumber) {
+    public int hexToDecimal(String hexNumber) {
 
         int decimal = 0;
         if(hexNumber == null){

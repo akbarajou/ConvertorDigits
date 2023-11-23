@@ -8,6 +8,6 @@
 
 
 
-*developed by Tangirov Akbar*
+*developed by Akbar and Davron*
 
 
