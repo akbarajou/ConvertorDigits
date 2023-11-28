@@ -20,7 +20,7 @@ public class HexBinary {
         }
         int padding = binaryNumber.length() % 4;
         if (padding > 0) {
-            binaryNumber = "0".repeat(4 - padding) + binaryNumber;
+
         }
         for (int i = 0; i < binaryNumber.length(); i += 4) {
             String nibble = binaryNumber.substring(i, i + 4);
