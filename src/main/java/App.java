@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 /**
  * The main class of the application.
  * @author Akbar and Davron
