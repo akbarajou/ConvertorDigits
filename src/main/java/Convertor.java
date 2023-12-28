@@ -29,7 +29,7 @@ public class Convertor {
         return this.binaryDecimal.binaryToDecimal(binary);
     }
     
-    public int decimalToBinary(int decimal) {
+    public String decimalToBinary(int decimal) {
         return this.binaryDecimal.decimalToBinary(decimal);
     }
 

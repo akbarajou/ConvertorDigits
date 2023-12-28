@@ -20,16 +20,9 @@ public class BinaryDecimal {
         return decimal;
     }
 
-    public int decimalToBinary(int decimal) {
-        int binary = 0;
-        int n = 1;
-        while (decimal != 0) {
-            int temp = decimal % 2;
-            decimal = decimal / 2;
-            binary += temp * n;
-            n = n * 10;
-        }
-        return binary;
+    public String decimalToBinary(int decimal) {
+        if (decimal == 0) return "";
+        return decimalToBinary(decimal / 2) + (decimal % 2);
     }
 
 
